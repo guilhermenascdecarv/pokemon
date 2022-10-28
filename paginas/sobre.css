@@ -25,33 +25,70 @@ nav {
     align-items: center;
     
 }
-.logo_div {
+#div_logo {
     padding-left: 4%;
 }
-.navegacao_div {
+#div_menu {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-nav a {
+#div_menu a {
     text-decoration: none;
     color: #3363b2;
     font-size: 1.2em;
     font-weight: bolder;
 }
-nav a:hover{
+#div_menu a:hover{
     color: #feca04;
     text-shadow: 2px 2px 8px #3363b2;
 }
 
-/*----------------------------------------*/
+/*----------------- Sobre Section -----------------*/
 
-.sobre_sec {
+#sobre_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 10%;
 }
-
 #img_sobre {
     transform: scaleX(-1);
     max-width: 500px;
+    margin-left: 5%;
+}
+#div_sobre {
+    padding: 0 7%;
+}
+#div_sobre p {
+    font-size: 1.2em;
+    color: #3363b2;
+    text-align: justify;
+}
+.icons_tecnologias {
+    width: 60px;
+    margin: 2%;
+}
+
+/*----------------- Desenvolvedor Section -----------------*/
+
+#desenvolvedor_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+#desenvolvedor_section span {
+    padding-right: 1.5%;
+    font-size: 1.1em;
+    color: #3363b2;
+    font-style: italic;
+    font-weight: 600;
+}
+.icons_redes {
+    margin-left: 10px;
+    width: 40px;
 }

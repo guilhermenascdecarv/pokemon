@@ -14,32 +14,38 @@
     <body>
         <header>
             <nav>
-                <div class="logo_div">
+                <div id="div_logo">
                     <a href="../../index.html">
                         <img src="../../imagens/logo.svg" alt="Logo Pokémon" width="200">
                     </a>
                 </div>
-                <div class="navegacao_div">
-                    <a href="/index.html">Home</a>
+                <div id="div_menu">
+                    <a href="../../index.html">Home</a>
                     <a href="../historia.html">História</a>
                     <a href="../sobre.html">Sobre</a>
                 </div>
             </nav>
         </header>
 
+        <!------------ Pokédex ------------>
+
         <main>
             <img src="#" alt="Pokémon" class="pokemon_image">
+            
             <h1 class="pokemon_data">
                 <span class="pokemon_number"></span> -
                 <span class="pokemon_name"></span>
             </h1>
+            
             <form class="form">
                 <input type="search" class="input_search" placeholder="Nome ou Número" required>
             </form>
+            
             <div class="buttons">
                 <button class="button btn_prev">&lt; Prev</button>
                 <button class="button btn_next">Next &gt;</button>
             </div>
+            
             <img src="pokedex.png" alt="Pokédex" class="pokedex">
         </main>
         

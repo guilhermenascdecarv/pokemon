@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-/*----------------------------------------*/
+/*----------------- Header -----------------*/
 
 nav {
     width: 100%;
@@ -25,55 +25,55 @@ nav {
     align-items: center;
     
 }
-.logo_div {
+#div_logo {
     padding-left: 4%;
 }
-.navegacao_div {
+#div_menu {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-nav a {
+#div_menu a {
     text-decoration: none;
     color: #3363b2;
     font-size: 1.2em;
     font-weight: bolder;
 }
-nav a:hover{
+#div_menu a:hover{
     color: #feca04;
     text-shadow: 2px 2px 8px #3363b2;
 }
 
-/*----------------------------------------*/
+/*----------------- Sections -----------------*/
 
-.historia_sec {
+#historia_section {
     padding: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-#img_hist_1 {
-    max-width: 400px;
+#img_hist {
+    max-width: 380px;
 }
 
 /*----------------------------------------*/
 
-.info_sec {
+#inform_section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: justify;
     padding-bottom: 4%;
 }
-.info_sec h4 {
+#inform_section h4 {
     font-size: 1.2em;
     color: #3363b2;
     text-align: center;
     margin-bottom: 5%;
 }
-.info_sec li {
+#inform_section li {
     font-size: 1em;
     color: #3363b2;
     text-align: justify;
