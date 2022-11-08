@@ -14,29 +14,38 @@
         <nav>
             <div id="div_logo">
                 <a href="../index.html">
-                    <img src="../imagens/logo.svg" alt="Logo Pokémon" width="200">
+                    <img src="../imagens/logo.svg" alt="Logo Pokémon">
                 </a>
             </div>
             <div id="div_menu">
-                <a href="../index.html">Home</a>
-                <a href="pokedex/pokedex.html">Pokédex</a>
-                <a href="sobre.html">Sobre</a>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../paginas/pokedex/pokedex.html">Pokédex</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
 
+            <button type="menu" onclick="abrirMenu()"><img src="../imagens/menu.png" alt="Menu" width="50px"></button>
+        </nav>
+
+        <div class="div_menu_mobile">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../paginas/pokedex/pokedex.html">Pokédex</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+   
     <!------------ História Section ------------>
 
     <section id="historia_section">
-        <div>
-            <img id="img_hist" src="../imagens/pikachu.png" alt="">
-        </div>
-        <div>
+        <div id="div_video">
             <iframe width="660" height="415" src="https://www.youtube.com/embed/Cb8g5E9ym8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     
-    <!------------ História Section ------------>
+    <!------------ Informações Section ------------>
     
     <section id="inform_section">
         <div>
@@ -48,6 +57,7 @@
                 <li><strong>Edição: </strong>Izabelle Oliveira</li>
                 <li><strong>Edição e Finalização: </strong>Luan Schuindt</li>
             </ul>
+            <img src="../imagens/pikachu.png" alt="Pikachu" id="img_lista">
         </div>
         <div>
             <h4>Fontes do Vídeo</h4>
@@ -65,5 +75,7 @@
             </ul>
         </div>
     </section>
+
+    <script src="../script.js"></script>
 </body>
 </html>

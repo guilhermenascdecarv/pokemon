@@ -14,15 +14,27 @@
         <nav>
             <div id="div_logo">
                 <a href="index.html">
-                    <img src="imagens/logo.svg" alt="Logo Pokémon" width="200">
+                    <img src="imagens/logo.svg" alt="Logo Pokémon">
                 </a>
             </div>
             <div id="div_menu">
-                <a href="paginas/historia.html">História</a>
-                <a href="paginas/pokedex/pokedex.html">Pokédex</a>
-                <a href="paginas/sobre.html">Sobre</a>
+                <ul>
+                    <li><a href="paginas/historia.html">História</a></li>
+                    <li><a href="paginas/pokedex/pokedex.html">Pokédex</a></li>
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                </ul>
             </div>
+
+            <button type="menu" onclick="abrirMenu()"><img src="imagens/menu.png" alt="Menu" width="50px"></button>
         </nav>
+
+        <div class="div_menu_mobile">
+            <ul>
+                <li><a href="paginas/historia.html">História</a></li>
+                <li><a href="paginas/pokedex/pokedex.html">Pokédex</a></li>
+                <li><a href="paginas/sobre.html">Sobre</a></li>
+            </ul>
+        </div>
     </header>
     
     <!------------ Primeira Section ------------>
@@ -30,9 +42,8 @@
     <section id="primeira_section">
         <div class="textos_sec">
             <h2>Conheça a história!</h3>
-            
+
             <p>Do sonho de criança ao fenômeno mundial! A história que você não conhece sobre o Pokémon, contada pelo canal <strong>LeeGengar</strong> no Youtube.</p>
-            
             <a class="botao" href="paginas/historia.html">História</a>
         </div>
         <div>
@@ -48,15 +59,12 @@
         </div>
         <div class="textos_sec">
             <h2>Acesse a Pokédex!</h2>
-            
+
             <p>Conheça todos os pokémons desse incrivel universo com a Pokédex.</p>
-            
             <a class="botao" href="paginas/pokedex/pokedex.html">Pokédex</a>
 
             <p> Desenvolvida com a PokéAPI, a RESTful Pokémon API.</p>
-
             <a class="botao" href="https://pokeapi.co" target="_blank">PokéAPI</a>
-
         </div>
     </section>
     
@@ -65,15 +73,15 @@
     <section id="terceira_section">
         <div class="textos_sections">
             <h2>Sobre</h2>
-
+            
             <p>Informações sobre o desenvolvimento do site.</p>
-
             <a class="botao" href="paginas/sobre.html">Sobre</a>
         </div>
-
         <div>
             <img id="img_home_3" src="imagens/meowth.png" alt="Meowth">
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

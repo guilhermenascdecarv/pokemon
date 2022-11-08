@@ -16,15 +16,27 @@
             <nav>
                 <div id="div_logo">
                     <a href="../../index.html">
-                        <img src="../../imagens/logo.svg" alt="Logo Pokémon" width="200">
+                        <img src="../../imagens/logo.svg" alt="Logo Pokémon">
                     </a>
                 </div>
                 <div id="div_menu">
-                    <a href="../../index.html">Home</a>
-                    <a href="../historia.html">História</a>
-                    <a href="../sobre.html">Sobre</a>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../historia.html">História</a></li>
+                        <li><a href="../sobre.html">Sobre</a></li>
+                    </ul>
                 </div>
+    
+                <button type="menu" onclick="abrirMenu()"><img src="../../imagens/menu.png" alt="Menu" width="50px"></button>
             </nav>
+    
+            <div class="div_menu_mobile">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../historia.html">História</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+            </div>
         </header>
 
         <!------------ Pokédex ------------>
@@ -48,7 +60,7 @@
             
             <img src="pokedex.png" alt="Pokédex" class="pokedex">
         </main>
-        
+
         <script src="pokedex.js"></script>
 </body>
 </html>

@@ -14,31 +14,43 @@
         <nav>
             <div id="div_logo">
                 <a href="../index.html">
-                <img src="../imagens/logo.svg" alt="Logo Pokémon" width="200">
+                    <img src="../imagens/logo.svg" alt="Logo Pokémon">
                 </a>
             </div>
             <div id="div_menu">
-                <a href="../index.html">Home</a>
-                <a href="historia.html">História</a>
-                <a href="pokedex/pokedex.html">Pokédex</a>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../paginas/pokedex/pokedex.html">Pokédex</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre</a></li>
+                </ul>
             </div>
+
+            <button type="menu" onclick="abrirMenu()"><img src="../imagens/menu.png" alt="Menu" width="50px"></button>
         </nav>
+
+        <div class="div_menu_mobile">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../paginas/pokedex/pokedex.html">Pokédex</a></li>
+                <li><a href="../paginas/sobre.html">Sobre</a></li>
+            </ul>
+        </div>
     </header>
 
     <!------------ Sobre Section ------------>
 
     <section id="sobre_section">
-        <div>
+        <div id="div_img_sobre">
             <img id="img_sobre" src="../imagens/evolution.png" alt="X, y, z">
         </div>
         <div>
-            <div>
+            <div id="div_tecnologias">
                 <img class="icons_tecnologias" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="Logo JavaScript"/>
                 <img class="icons_tecnologias" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="Logo CSS 3"/>
                 <img class="icons_tecnologias" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="Logo HTML 5"/>
             </div>
             <div id="div_sobre">
-                <p>Aplicação desenvolvida com o intuito de estudar e aprimorar algumas técnicas usadas nas linguagens HTML e CSS e na linguagem de programação JavaScript. A principal ... </p>
+                <p> Site desenvolvido com o intuito de aprimorar meus conhecimentos sobre <strong>responsividade</strong> em CSS com as <strong>media query </strong>e com os <strong>eventos</strong> em JavaScript. Também fiz o consumo de uma <strong>API</strong> externa utilizando o método <strong>fecth</strong> no JavaScript, para a requisição dos dados que alimentam a Pokédex.</p>
             </div>
         </div>
     </section>
@@ -47,11 +59,13 @@
 
     <section id="desenvolvedor_section">
         
-        <span>Guilherme Nascimento de Carvalho</span>
+        <span>Desenvolvido por Guilherme Nascimento de Carvalho</span>
         
         <a href="https://github.com/guilhermenascdecarv" target="_blank"><img class="icons_redes" src="../icons_redes/github.svg" alt="Github"></a>
         <a href="https://www.linkedin.com/in/guilhermenascdecarv/" target="_blank"><img class="icons_redes" src="../icons_redes/linkedin.svg" alt="LinkedIn"></a>
         
     </section>
+
+    <script src="../script.js"></script>
 </body>
 </html>

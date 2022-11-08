@@ -28,11 +28,17 @@ nav {
 #div_logo {
     padding-left: 4%;
 }
+#div_logo a img {
+    width: 200px;
+}
 #div_menu {
     width: 50%;
+}
+#div_menu ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    list-style: none;
 }
 #div_menu a {
     text-decoration: none;
@@ -43,6 +49,13 @@ nav {
 #div_menu a:hover{
     color: #feca04;
     text-shadow: 2px 2px 8px #3363b2;
+}
+
+nav button {
+    display: none;
+}
+.div_menu_mobile {
+    display: none;
 }
 
 /*----------------- Sobre Section -----------------*/
@@ -91,4 +104,71 @@ nav {
 .icons_redes {
     margin-left: 10px;
     width: 40px;
+}
+
+@media (max-width: 1100px) {
+    #div_logo a img {
+        width: 150px;
+    }
+    #div_img_sobre {
+        display: none;
+    }
+}
+@media (max-width: 720px) {
+    #div_logo a img {
+        width: 150px;
+    }
+    #div_tecnologias {
+        padding: 2%;
+    }
+}
+@media (max-width: 520px) {
+    #div_menu {
+        display: none;
+    }
+    
+    nav button {
+        display: block;
+        width: 60px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .div_menu_mobile {
+        display: none;
+    }
+    .aberto {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+    }
+    .div_menu_mobile ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .div_menu_mobile li {
+        padding: 9px;
+    }
+    .div_menu_mobile a {
+        text-decoration: none;
+        color: #3363b2;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+    .div_menu_mobile a:hover {
+        color: #feca04;
+        text-shadow: 2px 2px 8px #3363b2;
+    }
+  
+    #div_logo a img {
+        width: 120px;
+    }
+    #div_tecnologias {
+        padding: 6%;
+    }
+    #desenvolvedor_section {
+        padding-right: 3.5%;
+    }
+
 }
